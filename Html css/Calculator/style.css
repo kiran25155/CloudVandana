@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    border: 2px solid #333;
+    width: 350px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.display-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+#display {
+    width: 80%;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    padding: 0;
+}
+
+.clear-button {
+    width: 26%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background: rgb(0 132 100 / 68%); /* Red background for "C" button */
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.operators {
+    background:rgb(97 96 96 / 74%);
+}
+
+button:hover {
+    background: #444;
+}
